@@ -1,0 +1,473 @@
+body{
+	background-color:#555;
+}
+
+/*=====GENERALSTYLES=====*/
+.center{
+    display: block;
+    margin: 0 auto;
+}
+#content{
+	padding:30px 0px;
+	background-color:#f6f6f6;
+	width:60%;
+	min-height:600px;
+	margin:auto;
+}
+#footer{
+	margin-top:10px;
+	text-align:center;
+}
+.darkTheme{
+    background: #333;
+    color: #f6f6f6;
+}
+
+/*=====BUTTONS=====*/
+.btnMenu{
+    background:#ff850c;
+    transition: 0.1s all;
+    padding: 15px 15px;
+	text-align:center;
+}
+.btnMenu:hover, .active-btn{
+    background: #ffcc99;
+}
+.btnLogout{
+    background:#5a98fc;
+    transition: 0.1s all;
+    padding: 15px 15px;
+}
+.btnLogout:hover{
+    background: #8ab3f5;
+}
+.btnEdit{
+    border: none;
+    background:#333;
+    color: #f6f6f6;
+    transition: 0.1s all;
+    padding: 15px 15px;
+}
+.btnEdit:hover{
+    background: #444;
+    cursor: pointer;
+}
+.btnSaveEdit{
+    border: none;
+    background:#40bc0f;
+    color: #f6f6f6;
+    transition: 0.1s all;
+    padding: 15px 15px;
+}
+.btnSaveEdit:hover{
+    background: #4ec41f;
+    cursor: pointer;
+}
+.btnSaveEditDisabled{
+    border: none;
+    background: #eee;  
+    color: #888;
+    transition: 0.1s all;
+    padding: 15px 15px;
+}
+.btnSaveEditDisabled{
+    cursor: not-allowed;
+}
+.btnShowDoctorDetails, .btnHideDoctorDetails, .btnShowAnimalDetails{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 20px;
+    background:#ff850c;
+}
+.btnShowDoctorDetails:hover, .btnHideDoctorDetails:hover, .btnShowAnimalDetails:hover{
+    cursor: pointer;
+    background:#ffcc99;
+}
+.btnBackToAnimalList, #btnAddAnimal, #btnStatsAnimal{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background:#ff850c;
+    padding: 20px;
+    transition: 0.1s all;
+    float: left;
+    margin-left: 20px;
+}
+#btnAddAnimal, #btnStatsAnimal{
+    float: right;
+    margin-left: 0px;
+    margin-right: 20px;
+}
+.btnBackToAnimalList:hover, #btnAddAnimal:hover, #btnStatsAnimal:hover{
+    cursor: pointer;
+    background:#ffcc99;
+}
+.editAnimalButton, .saveAnimalButton, #btnConfirmAddAnimal{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background:#40bc0f;
+    padding: 20px;
+    margin-bottom:50px;
+    transition: 0.1s all;
+}
+.editAnimalButton:hover, .saveAnimalButton:hover, #btnConfirmAddAnimal:hover{
+    background: #4ec41f;
+    cursor: pointer;
+}
+#editUserInfoButton{
+    margin-top: 20px;
+    font-size: 1rem;
+}
+.saveAnimalButtonDisabled{
+    border: none;
+    background: #eee;  
+    color: #888;
+    transition: 0.1s all;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.saveAnimalButtonDisabled:hover{
+    cursor: not-allowed !important;
+}
+
+.btnInfo{
+    margin-left: 20px;
+    border: none;
+    padding: 10px 20px;
+    background: #5a98fc;
+    transition: 0.1s all;
+}
+.btnInfo:hover{
+    cursor: pointer;
+    background:#8ab3f5;
+}
+.btnAddVisit{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    background:#40bc0f;
+    transition: 0.1s all;
+}
+.btnAddVisit:hover{
+    cursor: pointer;
+    background: #4ec41f;
+}
+.btnAddVisitDisabled{
+    border: none;
+    background: #eee;  
+    color: #888;
+}
+.btnAddVisitDisabled:hover{
+    background: #eee;  
+    color: #888;
+    cursor: not-allowed !important;
+}
+
+/*=====TABLEINFOSTYLES=====*/
+#userInfo{
+    background: #f6f6f6;
+    border-radius:3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: auto;
+    max-width: 600px;
+    padding:5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+#userInfo tr:hover td:nth-child(odd) {
+    background: #e6e6e6;
+}
+#userInfo tr:hover td {
+    background:#444;
+}
+#userInfo td {
+    background:#f0f0f0;
+    padding:20px;
+    text-align:left;
+    vertical-align:middle;
+    font-size:1.1rem;
+    overflow: hidden;
+    width: 50%;
+}
+#userInfo td:nth-child(even){
+    background: #333;
+    color: #f6f6f6;
+}
+.tdBeforeEdit{
+    padding: 20px !important;
+}
+.tdDuringEdit{
+    padding: 0px !important;
+}
+.tdDuringAnimalEdit{
+    padding: 0px 50px 0px 0px !important;
+}
+.tdDuringAnimalEdit input{
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+.tdDuringAnimalEdit select{
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+.tdDuringEdit input{
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    padding-left:20px;
+}
+
+#doctorsList{
+    background: #f6f6f6;
+    border-radius:3px;
+    border-collapse: collapse;
+    margin: auto;
+    padding:5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 50px;
+}
+#doctorsList thead{
+    color: #f6f6f6;
+    background: #333;
+}
+#doctorsList thead th{
+    padding: 20px;
+}
+#doctorsList td{
+    padding: 0px !important;
+}
+#doctorsList tr:hover td{
+    background: #eaeaea;
+}
+
+#animalList{
+    background: #f6f6f6;
+    border-radius:3px;
+    border-collapse: collapse;
+    margin: auto;
+    padding:5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 50px;
+}
+#animalList thead{
+    color: #f6f6f6;
+    background: #333;
+}
+#animalList thead th{
+    padding: 20px;
+}
+#animalList td{
+    padding: 20px;
+}
+#animalList tr.singleAnimalRow:hover{
+    cursor: pointer;
+}
+#animalList tr:hover td{
+    background: #eaeaea;
+    color: #333;
+}
+
+#servicesList{
+    background: #f6f6f6;
+    border-radius:3px;
+    border-collapse: collapse;
+    margin: auto;
+    padding:5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 50px;
+}
+#servicesList thead{
+    color: #f6f6f6;
+    background: #333;
+}
+#servicesList thead th{
+    padding: 20px;
+}
+#servicesList td{
+    padding: 20px;
+}
+#servicesList tr:hover td{
+    background: #eaeaea;
+    color: #333;
+}
+
+.inputAddAnimal{
+    padding: 20px 20px;
+    width: 100%;
+    border: none;
+}
+.selectAddAnimal{
+    padding-right: 0px;
+}
+.tdAddAnimal{
+    padding: 0px 40px 0px 0px !important;
+}
+.tdAddAnimalSelect{
+    padding: 0px !important;
+}
+
+#addVisitList{
+    background: #f6f6f6;
+    border-radius:3px;
+    border-collapse: collapse;
+    margin: auto;
+    padding:5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 50px;
+}
+#addVisitList thead{
+    color: #f6f6f6;
+    background: #333;
+}
+#addVisitList thead th{
+    padding: 20px;
+}
+#addVisitList td{
+    padding: 20px;
+}
+#addVisitList tr:hover td{
+    background: #eaeaea;
+    color: #333;
+}
+.admissionHours{
+    text-align: center;
+    float:left; 
+    width: 50%; 
+    padding: 10px 0px; 
+    background: #f6f6f6; 
+    color: #333;
+}
+
+#visitHistoryList{
+    background: #f6f6f6;
+    border-radius:3px;
+    border-collapse: collapse;
+    margin: auto;
+    padding:5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 50px;
+}
+#visitHistoryList thead{
+    color: #f6f6f6;
+    background: #333;
+}
+#visitHistoryList thead th{
+    padding: 20px;
+    width: 25%;
+}
+#visitHistoryList td{
+    padding: 20px;
+}
+#visitHistoryList tr:hover td{
+    background: #eaeaea;
+    color: #333;
+}
+
+/*=====VISITFILTERS====*/
+#visitFiltersContainer{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+#visitFiltersContainer button{
+    border:none;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px 10px 20px 10px;
+    float: none;
+}
+#visitFiltersContainer button:hover{
+    cursor: pointer;
+}
+
+/*=====ERRORSTYLES=====*/
+.edit-data-error{
+	display:block;
+	width:60%;
+	margin:auto;
+	color:red;
+	text-align:center;
+}
+
+/*=====SEARCHSTYLES=====*/
+#searchDoctorBox, #searchServiceBox{
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+}
+#searchDoctorInput, #searchAnimalInput, #searchServiceInput{
+    font-size: 1rem;
+    padding: 20px;
+    border: none;
+    width: 95%;
+	box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+/*=====VISITSUBMENU=====*/
+#visitSubMenu{
+	text-align:center;
+}
+#visitSubMenu > .btnMenu{
+	float:none;
+	display:inline-block;
+}
+
+/*=====OPINION=====*/
+#opinionText{
+    width: 95%;
+    height: 300px;
+    padding: 20px;
+    font-family: 'Calibri';
+    font-size: 1.1rem;  
+}
+#btnSendOpinion{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background:#ff850c;
+    padding: 20px;
+    margin-bottom:50px;
+    transition: 0.1s all;
+}
+#btnSendOpinion:hover{
+    cursor: pointer;
+    background: #ffcc99;
+}
+
+#changePasswordButton {
+    border: none;
+    background:#ff850c;
+    padding: 15px 22px;
+    margin-bottom:50px;
+    margin-top:10px;
+    transition: 0.1s all;
+}
+#changePasswordButton:hover {
+    cursor: pointer;
+    background: #ffcc99;
+}

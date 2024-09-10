@@ -1,0 +1,230 @@
+/*=====FONTS======*/
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('../fonts/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: 'OpenSans-Italic';
+    src: url('../fonts/OpenSans-Italic.ttf');
+}
+
+/*=====GLOBALSTYLES=======*/
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'OpenSans-Regular';
+    min-height: 100%;
+}
+.bodyNotlogged{
+    background: url('../img/background2.jpg');
+    background-size: cover;
+}
+.clear {
+    clear: both;
+}
+
+/*=====MENUSTYLES=====*/
+#menu {
+    background: #333;
+    width: 100%;
+}
+#appTitle, #actionButtons {
+    color: #f6f6f6;
+    font-size: 1.8rem;
+    margin: 0;
+    float: left;
+}
+#appTitle{
+    width: 30%;
+}
+#actionButtons{
+    width: 70%;
+}
+#appTitle a {
+    display: block;
+    text-decoration: none;
+    color: #f6f6f6;
+    text-align: center;
+    margin: 25px;
+}
+
+/*=====BUTTONSSTYLES=====*/
+.btn{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    margin: 15px 10px;
+    float: right;
+    border: none;
+    padding: 15px 30px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btnLogin {
+    background:#39e572;
+}
+.btnLogin:hover{
+    background: #6af297;
+    transition: 0.1s all;
+}
+.btnRegister {
+    background: #187cf7;  
+    color:black;
+}
+.btnRegister:hover{
+    background: #3f90f4;
+    transition: 0.1s all;
+}
+.btnRegisterDisabled{
+    background: #eee;  
+    color: #888;
+}
+.btnRegisterDisabled:hover{
+    cursor: not-allowed;
+}
+
+
+/*=====CONTENTSTYLES=====*/
+#contentMain {
+    height: 100%;
+    width: 100%;
+    background: #f6f6f6;
+}
+#content{
+    height: 100%;
+    width: 100%;
+}
+#contentTitle h1{
+    text-align: center;
+    margin: 0;
+    padding: 50px 0px;
+}
+#contentTitle h3{
+    text-align: center;
+    margin: 0;
+    padding: 50px 0px;
+}
+#contentDescription, #contentTitle, #contentFunctions {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 28px;
+}
+#contentFunctions{
+    margin-top: 50px;
+}
+.functionItem {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #f6f6f5;
+    margin-bottom:20px;
+    transition: 0.2s all;
+}
+.functionItem:hover{
+    background: #444;
+}
+.functionItemImage {
+    float: left;
+    width: 50%;
+}
+.functionItemDescription {
+    float: left;
+    width: 50%;
+}
+.functionItemDescription p{
+    padding:10px;
+}
+
+/*=====FORMSTYLES=====*/
+#loginForm, #registerForm {
+    color: #f6f6f6;
+    width: 40%;
+    margin: 0 auto;
+    padding: 50px;
+    background: #333;
+    margin-top: 50px;
+}
+#registerForm h1, #loginForm h1{
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+.formGroup {
+    display: block;
+    padding: 10px;
+}
+.formGroup label{
+    width: 45%;
+    float: left;
+    line-height: 35px;
+}
+.formGroup input{
+    width: 45%;
+    float: right;
+    border: none;
+    padding: 10px;
+}
+
+
+/*===LOGINSTYLES===*/
+.login-error{
+	display:block;
+	color:#a6a6a6;
+	letter-spacing:1px;
+	position:absolute;
+}
+
+/*===REGISTERSTYLES===*/
+.register-error-info{
+	display:block;
+	color:#a6a6a6;
+	letter-spacing:1px;
+	position:absolute;
+	border:1px solid #990000;
+	border-radius:10px;
+	text-align:center;
+	cursor:pointer;
+}
+.register-error{
+	display:block;
+	color:#b26060;
+	letter-spacing:1px;
+	position:absolute;
+}
+
+/*=====MESSEGESSTYLES=====*/
+#messages{
+	cursor:default;
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+#messagesInfo{
+    width:90%;
+    float:left;
+}
+#messagesClose{
+    width:10%;
+    text-align: center;
+    float:left;
+}
+#messagesClose i:hover{
+    cursor: pointer;
+}
+.messageSuccess{
+    background: #39e572 !important;
+}
+.messageError{
+    background: red !important;
+}

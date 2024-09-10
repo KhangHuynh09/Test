@@ -1,0 +1,367 @@
+body{
+	background-color:#555;
+}
+
+/*=====GENERALSTYLES=====*/
+.center{
+    display: block;
+    margin: 0 auto;
+}
+#content{
+	padding:30px 0px;
+	background-color:#f6f6f6;
+	width:60%;
+	min-height:600px;
+	margin:auto;
+}
+#footer{
+	margin-top:10px;
+	text-align:center;
+}
+
+/*=====BUTTONS=====*/
+.btnMenu{
+    background:#ff850c;
+    transition: 0.1s all;
+    padding: 15px 15px;
+	text-align:center;
+}
+.btnMenu:hover, .active-btn{
+    background: #ffcc99;
+}
+.btnLogout{
+    background:#5a98fc;
+    transition: 0.1s all;
+    padding: 15px 15px;
+}
+.btnLogout:hover{
+    background: #8ab3f5;
+}
+.btnEdit{
+    border: none;
+    background:#333;
+    color: #f6f6f6;
+    transition: 0.1s all;
+    padding: 15px 15px;
+}
+.btnEdit:hover{
+    background: #444;
+    cursor: pointer;
+}
+.btnSaveEdit{
+    border: none;
+    background:#40bc0f;
+    color: #f6f6f6;
+    transition: 0.1s all;
+    padding: 15px 15px;
+}
+.btnSaveEdit:hover{
+    background: #4ec41f;
+    cursor: pointer;
+}
+.btnSaveEditDisabled{
+    border: none;
+    background: #eee;  
+    color: #888;
+    transition: 0.1s all;
+    padding: 15px 15px;
+}
+.btnSaveEditDisabled{
+    cursor: not-allowed;
+}
+#editUserInfoButton{
+    margin-top: 20px;
+    font-size: 1rem;
+}
+#changePasswordButton {
+    border: none;
+    background:#ff850c;
+    padding: 15px 22px;
+    margin-bottom:50px;
+    margin-top:10px;
+    transition: 0.1s all;
+}
+#changePasswordButton:hover {
+    cursor: pointer;
+    background: #ffcc99;
+}
+/*=====TABLEINFOSTYLES=====*/
+#userInfo, #customerDetail, #doctorDetail, #mainStatsTable{
+	cursor:default;
+    background: #f6f6f6;
+    border-radius:3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: auto;
+    max-width: 600px;
+    padding:5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+#userInfo tr:nth-child(2n),#customerDetail tr:nth-child(2n),#doctorDetail tr:nth-child(2n), #mainStatsTable tr:nth-child(2n){
+	opacity:0.97;
+}
+#userInfo > tbody > tr:hover > td:nth-child(odd),#customerDetail tr:hover td:nth-child(odd) ,#doctorDetail > tbody > tr:hover > td:nth-child(odd), #mainStatsTable > tbody > tr:hover > td:nth-child(odd){
+    background: #e6e6e6;
+}
+#userInfo > tbody > tr:hover > td,#customerDetail tr:hover td,#doctorDetail > tbody > tr:hover > td , #mainStatsTable > tbody > tr:hover > td{
+    background:#444;
+}
+#userInfo > tbody > tr > td, #customerDetail td,#doctorDetail > tbody > tr > td, #mainStatsTable > tbody > tr > td{
+    background:#f0f0f0;
+    padding:20px;
+    text-align:left;
+    vertical-align:middle;
+    font-size:1.1rem;
+    overflow: hidden;
+    width: 50%;
+}
+#userInfo > tbody > tr > td:nth-child(even), #customerDetail td:nth-child(even),#doctorDetail > tbody > tr > td:nth-child(even),#mainStatsTable > tbody > tr > td:nth-child(even){
+    background: #333;
+    color: #f6f6f6;
+}
+#mainStatsTable > tbody > tr > td:nth-child(even){
+	text-align:center;
+}
+#userInfo tr .sector-title{
+	text-align:center;
+	font-weight:600;
+	letter-spacing:1px;
+	font-size:1.5rem;
+	background-color:#d9d9d9;
+}
+#customerDetail thead th,#doctorDetail thead th, #mainStatsTable thead th{
+    color: #f6f6f6;
+    background-color: gray;
+	padding:20px 0px;
+}
+#customerDetail,#doctorDetail{
+	margin-top:10px;
+}
+#doctorDetail > tbody > tr > td:first-child{
+	letter-spacing:1px;
+	font-weight:600;
+}
+.tdBeforeEdit{
+    padding: 20px !important;
+}
+.tdDuringEdit{
+    padding: 0px !important;
+}
+.tdDuringEdit input{
+    font-size: 1rem;
+	border:none;
+    padding: 31px 10%;
+    width: 80%;
+}
+.tdDuringEdit select{
+    font-size: 1rem;
+	border:none;
+    padding: 31px 10%;
+    width: 100%;
+}
+table.editAH{
+	width:100%;
+}
+table.editAH > tbody > tr > td{
+	padding:0px;
+	width:20%;
+	text-align:center;
+	background-color:inherit;
+}
+table.editAH > tbody > tr > td:last-child{
+	text-align:right;
+}
+table.editAH input[type=text],.medicine-edit,.disease-edit{
+	width:100%;
+	border:none;
+	text-align:center;
+	font-size:1.1rem;
+}
+.select-medicine-edit,.select-disease-edit{
+    font-size: 1.1rem;
+	border:none;
+    padding: 10px 0px;
+    width: 100%;
+	text-align:center;
+}
+/*=====SUBMENUDOCTOR=====*/
+#doctorSubMenu{
+	text-align:center;
+}
+#doctorSubMenu > .btnMenu{
+	float:none;
+	display:inline-block;
+}
+#contentDescription{
+	text-align:center;
+
+}
+/*=====TABLECUSTOMERandDOCTORLIST=====*/
+#customerList,#doctorList,#medicinesList,#diseasesList,#petsList,#visitsList{
+    background: #f6f6f6;
+    border-radius:3px;
+    border-collapse: collapse;
+    margin: auto;
+    padding:5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 50px;
+}
+#customerList tr:nth-child(2n),#doctorList tr:nth-child(2n),#medicinesList tr:nth-child(2n),#diseasesList tr:nth-child(2n),#petsList tr:nth-child(2n),#visitsList tr:nth-child(2n){
+	background-color:#f0f0f0;
+}
+#customerList thead,#doctorList thead,#medicinesList thead,#diseasesList thead, #petsList thead, #visitsList thead{
+    color: #f6f6f6;
+    background: #333;
+}
+#customerList thead th,#doctorList thead th,#medicinesList thead th,#diseasesList thead th,#petsList thead th,#visitsList thead th{
+    padding: 20px;
+}
+#customerList td,#customerDetail td,#doctorList td,#medicinesList td,#diseasesList td,#petsList td,#visitsList td{
+    padding: 10px 20px;
+}
+#customerList tr:hover td,#doctorList tr:hover td{
+    background: #eaeaea;
+	cursor:pointer;
+}
+#medicinesList tr:hover td,#diseasesList tr:hover td,#petsList tr:hover td,#visitsList tr:hover td{
+	background: #eaeaea;
+	cursor:default;
+}
+#medicinesList tr td:last-child:hover,#diseasesList tr td:last-child:hover,#petsList tr td:last-child:hover,#visitsList tr td:last-child:hover{
+	cursor:pointer;
+	color:gray;
+}
+#medicinesList tr td:first-child,#diseasesList tr td:first-child,#petsList tr td:first-child{
+	font-weight:600;
+	letter-spacing:1px;
+}
+#addMedicineTable,#addDiseaseTable{
+	cursor:default;
+    background: #f6f6f6;
+    border-radius:3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: auto;
+    padding:5px;
+    width: 90%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+#addMedicineTable > tbody > tr:hover > td:nth-child(odd),#addDiseaseTable > tbody > tr:hover > td:nth-child(odd){
+    background: #e6e6e6;
+}
+#addMedicineTable thead th,#addDiseaseTable thead th{
+    color: #f6f6f6;
+    background-color: gray;
+	padding:20px 0px;
+}
+#addMedicineTable > tbody > tr > td:first-child,#addDiseaseTable > tbody > tr > td:first-child{
+	letter-spacing:1px;
+	font-weight:600;
+}
+.admission-hours{
+    text-align: center;
+    float:left; 
+    width: 50%; 
+    padding: 10px 0px; 
+    background: #f6f6f6; 
+    color: #333;
+}
+#addNewVisit{
+	width:100%;
+}
+#addNewVisit td{
+	width:50%;
+	font-size:1.1rem;
+	letter-spacing:1px;
+}
+#addNewVisit td>select{
+    font-size: 1rem;
+	border:none;
+    padding: 31px 10%;
+    width: 100%;
+}
+#addNewVisit td>input{
+    font-size: 1rem;
+	border:none;
+    padding: 31px 10%;
+    width: 80%;
+}
+#visitDetailTable{
+	cursor:default;
+    background: #f6f6f6;
+    border-radius:3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: auto;
+    padding:5px;
+    width: 90%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+#visitDetailTable > tr > td:nth-child(2n+1){
+	letter-spacing:1px;
+	font-weight:600;
+}
+#visitDetailTable > tr:nth-child(2n+1){
+	background-color:#ccc;
+}
+#visitDetailTable td{
+	padding: 10px 1%;
+	width:23%;
+}
+.doctor-service-error-info{
+	display:block;
+	color:#a6a6a6;
+	letter-spacing:1px;
+	position:absolute;
+	border:1px solid #990000;
+	border-radius:10px;
+	text-align:center;
+	cursor:pointer;
+	padding-top:15px;
+}
+.doctor-service-error{
+	display:block;
+	position:absolute;
+	background-color:#d9d9d9;
+	letter-spacing:0.7px;
+	box-shadow:0 5px 10px rgba(0, 0, 0, 0.1);
+	border-radius:10px;
+	padding:10px;
+	margin-right:20px;
+	text-align:justify;
+}
+/*=====STYLESFORCUSOTOMERSERVICE=====*/
+.detail-input{
+    font-size: 1rem;
+    padding: 31px;
+    border: none;
+    width: 90%;
+	box-shadow: 3px 3px 5px 6px #ccc;
+}
+.detail-input::placeholder{
+    color:gray;
+}
+.search-button{
+	transition: 0.1s all;
+	display:block;
+	margin:auto;
+	margin-top:15px;
+	width:50%;
+	padding:15px;
+	background-color:#ff850c;
+}
+.search-button:hover{
+	background-color:#ffcc99;
+	cursor:pointer;
+}
+/*=====STYLESFORDATAEDITERROR=====*/
+.edit-data-error{
+	display:block;
+	width:60%;
+	margin:auto;
+	color:red;
+	text-align:center;
+}
